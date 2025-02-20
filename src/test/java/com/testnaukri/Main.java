@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.NoSuchElementException;
+
 import java.util.concurrent.TimeUnit;
 
 public class Main {
@@ -31,7 +31,7 @@ public class Main {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
 
         WebElement popUp = driver.findElement(By.xpath("//div[@class='acceptance-btn']"));
@@ -80,7 +80,7 @@ public class Main {
         WebElement expDetails = driver.findElement(By.xpath("//span[@name='Experience']"));
         String expDetailsText = expDetails.getText();
         System.out.println("Experience Details: "+expDetailsText);
-        
+
 
         driver.quit();
     }
