@@ -7,10 +7,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.manager.SeleniumManager;
+
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
+
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -81,21 +80,7 @@ public class Main {
         WebElement expDetails = driver.findElement(By.xpath("//span[@name='Experience']"));
         String expDetailsText = expDetails.getText();
         System.out.println("Experience Details: "+expDetailsText);
-
-
-//        try {
-//            WebElement popupCross = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='crossIcon chatBot chatBot-ic-cross']")));
-//            if (popupCross.isDisplayed()) {
-//                popupCross.click();
-//            }
-//        } catch (NoSuchElementException e) {
-//            System.out.println("No popup found continuing");
-//        }
-
-//        js.executeScript("window.scrollBy(0, 500);");  // Scrolls down by 500 pixels
-//
-//
-//
+        
 
         driver.quit();
     }
