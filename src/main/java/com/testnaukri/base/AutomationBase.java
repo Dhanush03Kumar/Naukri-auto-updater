@@ -17,7 +17,7 @@ public class AutomationBase {
 
 
         String browser = ConfigReader.getProperty("browser").toLowerCase();
-        System.out.println("Hello!");
+        System.out.println("Hello");
         System.out.println("Starting testing on: "+browser);
 
         switch (browser){
