@@ -40,10 +40,10 @@ public class Main {
 
         WebElement userName = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='form-row'][1]/input")));
         userName.click();
-        userName.sendKeys("dhanuk0243@gmail.com");
+        userName.sendKeys("**************");
 
         WebElement password = driver.findElement(By.xpath("//div[@class='form-row'][2]/input"));
-        password.sendKeys("Dhanu@3420");
+        password.sendKeys("********");
 
         WebElement submit = driver.findElement(By.xpath("//button[@type='submit']"));
         submit.click();
