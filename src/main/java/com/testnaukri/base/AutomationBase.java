@@ -10,11 +10,13 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class AutomationBase {
 
-    protected WebDriver driver;
+    protected static WebDriver driver;
 
 
     public void setUp(){
-
+        if (driver != null) {
+            return;
+        }
 
         String browser = ConfigReader.getProperty("browser").toLowerCase();
         System.out.println("Hello");
@@ -51,10 +53,11 @@ public class AutomationBase {
     public void tearDown(){
         if(driver!=null){
             driver.quit();
+            driver=null;
         }
     }
 
-    public WebDriver getDriver(){
+    public static WebDriver getDriver(){
         return driver;
     }
 }

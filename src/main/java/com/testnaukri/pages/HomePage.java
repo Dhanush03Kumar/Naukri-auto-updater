@@ -3,6 +3,8 @@ package com.testnaukri.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
+
 
 public class HomePage extends Base{
 
@@ -22,4 +24,8 @@ public class HomePage extends Base{
     }
 
 
+    public void verifyHomePage() {
+        String expectedTitle="Jobs - Recruitment - Job Search - Employment - Job Vacancies - Naukri.com";
+        Assert.assertEquals(driver.getTitle(), expectedTitle, "Home page title does not match!");
+    }
 }

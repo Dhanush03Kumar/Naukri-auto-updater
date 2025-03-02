@@ -5,6 +5,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 public class ProfilePage extends Base{
 
@@ -71,5 +72,10 @@ public class ProfilePage extends Base{
 
     public String getExperienceDetails(){
         return getText(experience);
+    }
+
+    public void verifyProfilePage() {
+        String expectedTitle="Mynaukri";
+        Assert.assertEquals(driver.getTitle(), expectedTitle, "Profile page title does not match!");
     }
 }
