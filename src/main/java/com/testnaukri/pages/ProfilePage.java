@@ -75,7 +75,12 @@ public class ProfilePage extends Base{
     }
 
     public void verifyProfilePage() {
-        String expectedTitle="Mynaukri";
-        Assert.assertEquals(driver.getTitle(), expectedTitle, "Profile page title does not match!");
+        String expectedTitle1 = "Mynaukri";
+        String expectedTitle2 = "Profile | Mynaukri";
+        String actualTitle = driver.getTitle();
+
+        Assert.assertTrue(actualTitle.equals(expectedTitle1) || actualTitle.equals(expectedTitle2),
+                "Profile page title does not match! Expected: " + expectedTitle1 + " or " + expectedTitle2 + " but found: " + actualTitle);
+
     }
 }

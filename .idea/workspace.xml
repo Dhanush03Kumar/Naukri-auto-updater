@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d8367d1-5169-44ed-8885-0140b3668d19" name="Changes" comment="Removed duplicate dependencies">
+    <list default="true" id="3d8367d1-5169-44ed-8885-0140b3668d19" name="Changes" comment="updated new methods to secure credentials">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testnaukri/utils/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testnaukri/utils/ConfigReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/testnaukri/tests/stepdefinitions/updateProfileExperienceSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testnaukri/tests/stepdefinitions/updateProfileExperienceSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testnaukri/pages/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testnaukri/pages/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testnaukri/tests/testrunner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testnaukri/tests/testrunner/TestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -304,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740979754008</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="updated new methods to secure credentials">
+      <option name="closed" value="true" />
+      <created>1740982626892</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1740982626892</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -328,6 +336,7 @@
     <MESSAGE value="Implemented BDD cucumber framework" />
     <MESSAGE value="Downgraded JDK for jenkins integration" />
     <MESSAGE value="Removed duplicate dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed duplicate dependencies" />
+    <MESSAGE value="updated new methods to secure credentials" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated new methods to secure credentials" />
   </component>
 </project>
