@@ -28,8 +28,8 @@ public class updateProfileExperienceSteps extends AutomationBase {
         homePage = new HomePage(driver);
         profilePage = new ProfilePage(driver);
 
-        username = ConfigReader.getProperty("username");
-        password = ConfigReader.getProperty("password");
+        username = ConfigReader.getProperty("NAUKRI_USERNAME");
+        password = ConfigReader.getProperty("NAUKRI_PASSWORD");
     }
 
     @Given("User is on login page")

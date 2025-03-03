@@ -6,12 +6,12 @@ import java.util.Properties;
 
 public class ConfigReader {
 
-    private static Properties properties;
+    private static Properties properties = new Properties();
+
 
     static {
         try {
             FileInputStream file = new FileInputStream("src/test/resources/config.properties");
-            properties = new Properties();
             properties.load(file);
         }catch (IOException e){
             e.printStackTrace();
@@ -19,7 +19,12 @@ public class ConfigReader {
         }
     }
 
-    public static String getProperty(String Key){
-        return properties.getProperty(Key);
+    public static String getProperty(String key){
+        String value = properties.getProperty(key);
+        if (value == null || value.isEmpty()) {
+            // Fallback to environment variables if property is missing
+            value = System.getenv(key);
+        }
+        return value;
     }
 }

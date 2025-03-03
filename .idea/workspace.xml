@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d8367d1-5169-44ed-8885-0140b3668d19" name="Changes" comment="Implemented BDD cucumber framework">
+    <list default="true" id="3d8367d1-5169-44ed-8885-0140b3668d19" name="Changes" comment="Removed duplicate dependencies">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testnaukri/utils/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testnaukri/utils/ConfigReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testnaukri/tests/stepdefinitions/updateProfileExperienceSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testnaukri/tests/stepdefinitions/updateProfileExperienceSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,21 +137,42 @@
     </configuration>
     <configuration name="TestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="NaukriAutoUpdate" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.testnaukri.tests.testrunner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="com.testnaukri.tests.testrunner" />
       <option name="MAIN_CLASS_NAME" value="com.testnaukri.tests.testrunner.TestRunner" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <envs>
+        <env name="NAUKRI_USERNAME" value="dhanuk0243@gmail.com" />
+        <env name="NAUKRI_PASSWORD" value="Dhanu@3420" />
+      </envs>
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Cucumber Java.Feature: login" />
+      <item itemvalue="Cucumber Java.Scenario: Successful login with valid credentials" />
+      <item itemvalue="TestNG.C:/Users/dhanu/IdeaProjects/NaukriAutoUpdate/src/test/resources/testNG.xml" />
+      <item itemvalue="TestNG.NaukriUpdaterTest.updateProfileTest" />
+      <item itemvalue="TestNG.TestRunner" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.TestRunner" />
@@ -265,7 +288,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740940030211</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Downgraded JDK for jenkins integration">
+      <option name="closed" value="true" />
+      <created>1740979671960</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1740979671960</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Removed duplicate dependencies">
+      <option name="closed" value="true" />
+      <created>1740979754008</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1740979754008</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -287,6 +326,8 @@
     <MESSAGE value="Implemented Page object model" />
     <MESSAGE value="Updated configuration files" />
     <MESSAGE value="Implemented BDD cucumber framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented BDD cucumber framework" />
+    <MESSAGE value="Downgraded JDK for jenkins integration" />
+    <MESSAGE value="Removed duplicate dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed duplicate dependencies" />
   </component>
 </project>
